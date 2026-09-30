@@ -188,3 +188,7 @@ mvn -Pjdbc-external "-Dspring.profiles.active=external" test
 
 本项目最初基于 zxTinF 的教学型论文助手原型，当前版本经原作者授权公开，并已围绕 AgentScope 运行时、证据快照、阶段工作流、不可变版本和确定性全文组装进行了重构。公开仓库不复制原项目的 Git 历史。
 
+## 许可证
+
+本项目采用 [Apache License 2.0](LICENSE)。第三方来源与改造说明见 [NOTICE](NOTICE)。
+

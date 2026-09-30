@@ -1,0 +1,11 @@
+Evidence-Driven Paper Agent
+Copyright 2026 Chen Xiaodong
+
+This product includes substantial modifications of the educational
+paper-ai-agent prototype originally authored by zxTinF. Publication of this
+version is made with the original author's permission.
+
+The current version replaces the prototype runtime and application flow with
+an AgentScope-based runtime boundary, evidence snapshots, stage-gated writing
+workflows, immutable outline/section/document versions, structured citations,
+and PostgreSQL/Flyway persistence.
