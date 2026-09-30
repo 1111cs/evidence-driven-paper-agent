@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: evidence-driven-paper-agent
+  profiles:
+    default: local
+
+paper:
+  writing:
+    repository-type: memory
+    outline:
+      max-evidence-count: ${PAPER_OUTLINE_MAX_EVIDENCE_COUNT:20}
+      max-evidence-characters: ${PAPER_OUTLINE_MAX_EVIDENCE_CHARACTERS:30000}
+    section:
+      max-evidence-count: ${PAPER_SECTION_MAX_EVIDENCE_COUNT:12}
+      max-evidence-characters: ${PAPER_SECTION_MAX_EVIDENCE_CHARACTERS:20000}
+      max-previous-section-characters: ${PAPER_SECTION_MAX_PREVIOUS_CHARACTERS:8000}
+  agent:
+    runtime: agentscope
+    max-iterations: ${PAPER_AGENT_MAX_ITERATIONS:10}
+    agentscope:
+      api-key: ${DEEPSEEK_API_KEY:local-placeholder-not-for-production}
+      base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
+      model: ${DEEPSEEK_MODEL:deepseek-chat}
+      tool-timeout: ${PAPER_AGENT_TOOL_TIMEOUT:PT10M}
+  knowledge:
+    enabled: ${PAPER_KNOWLEDGE_ENABLED:false}
+    endpoint: ${PAPER_KNOWLEDGE_ENDPOINT:}
+    api-key: ${PAPER_KNOWLEDGE_API_KEY:}
+    index-id: ${PAPER_KNOWLEDGE_INDEX_ID:}
+    top-k: ${PAPER_KNOWLEDGE_TOP_K:5}
+    connect-timeout: ${PAPER_KNOWLEDGE_CONNECT_TIMEOUT:PT10S}
+    read-timeout: ${PAPER_KNOWLEDGE_READ_TIMEOUT:PT60S}
+  tools:
+    arxiv-download:
+      base-url: ${PAPER_ARXIV_DOWNLOAD_BASE_URL:https://arxiv.org/pdf/}
+      connect-timeout: ${PAPER_ARXIV_CONNECT_TIMEOUT:10s}
+      read-timeout: ${PAPER_ARXIV_READ_TIMEOUT:60s}
+      max-pdf-size: ${PAPER_ARXIV_MAX_PDF_SIZE:50MB}
+      max-redirects: ${PAPER_ARXIV_MAX_REDIRECTS:5}
+
+server:
+  port: ${SERVER_PORT:8123}
+  servlet:
+    context-path: /api
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: writing
+      paths-to-match: /writing/**
+      packages-to-scan: org.example.paperaiagent.controller
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

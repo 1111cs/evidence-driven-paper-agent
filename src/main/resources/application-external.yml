@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:54333/paper_agent}
+    username: ${SPRING_DATASOURCE_USERNAME:paper_agent}
+    password: ${SPRING_DATASOURCE_PASSWORD:paper_agent}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+    validate-on-migrate: true
+
+paper:
+  writing:
+    repository-type: jdbc

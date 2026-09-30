@@ -1,0 +1,165 @@
+{
+  "code": "Success",
+  "status_code": 200,
+  "data": {
+    "total": 58,
+    "nodes": [
+      {
+        "score": 0.8418587446212769,
+        "metadata": {
+          "is_displayed_chunk_content": true,
+          "_rc_v_score": 0.4840816855430603,
+          "nid": "574e57b3ba2a5fcdc74fad475451a6a2|be51c29c1c3793306ecae6b1db1100b8|b000968574f904b250fa827027d06bf5",
+          "_q_score": 0.6605277005293836,
+          "source": 0,
+          "_score": 0.8418587446212769,
+          "title": "1Introduction",
+          "content": "We note, however, information from dif-ferent modalities may be ambiguous and conflict-ing due to sentiment-irrelevance, especially from non-dominating modalities (e.g., lighting and head pose in video and background noise in audio). Such disruptive information can greatly limit the perfor-mance of MSA methods. We have observed this phenomenon in several datasets (see Section 4.5.1) and an illustration is in Figure 1. To the best of our knowledge, there has never been prior work explic-itly and actively taking this factor into account.757Motivated by the above observation, we propose a novel Adaptive Language-guided Multimodal Transformer (ALMT) to improve the performance of MSA by addressing the adverse effects of dis-ruptive information in visual and audio modalities. In ALMT, each modality is first transformed into a unified form by using a Transformer with initial-ized tokens. This operation not only suppresses the redundant information across modalities, but also compresses the length of long sequences to facilitate efficient model computation. Then, we introduce an Adaptive Hyper-modality Learning(AHL) module that uses different scales of lan-guage features with dominance to guide the vi-sual and audio modalities to produce the interme-diate hyper-modality token, which contains less sentiment-irrelevant information. Finally, we apply a cross-modality fusion Transformer with language features serving as query and hyper-modality fea-tures serving as key and value. In this sense, the complementary relations between language and vi-sual and audio modalities are implicitly reasoned, achieving robust and accurate sentiment predic-tions. In summary, the major contributions of our work can be summarized as:",
+          "workspace_id": "workspace-demo",
+          "_rc_t_score": 4.423973560333252,
+          "_text_template": null,
+          "doc_name": "（4）ALMT",
+          "pipeline_id": "index-demo",
+          "image_url": [],
+          "exist_page_snapshot": true,
+          "doc_id": "file-demo",
+          "_chunk_status": 0,
+          "_rc_score": 0,
+          "hier_title": "Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\n>Abstract\n>1Introduction>",
+          "_chunk_status_message": "成功",
+          "page_number": [
+            0,
+            1
+          ],
+          "_id": "workspace-demo_index-demo_file-demo_0_2"
+        },
+        "text": "We note, however, information from dif-ferent modalities may be ambiguous and conflict-ing due to sentiment-irrelevance, especially from non-dominating modalities (e.g., lighting and head pose in video and background noise in audio). Such disruptive information can greatly limit the perfor-mance of MSA methods. We have observed this phenomenon in several datasets (see Section 4.5.1) and an illustration is in Figure 1. To the best of our knowledge, there has never been prior work explic-itly and actively taking this factor into account.757Motivated by the above observation, we propose a novel Adaptive Language-guided Multimodal Transformer (ALMT) to improve the performance of MSA by addressing the adverse effects of dis-ruptive information in visual and audio modalities. In ALMT, each modality is first transformed into a unified form by using a Transformer with initial-ized tokens. This operation not only suppresses the redundant information across modalities, but also compresses the length of long sequences to facilitate efficient model computation. Then, we introduce an Adaptive Hyper-modality Learning(AHL) module that uses different scales of lan-guage features with dominance to guide the vi-sual and audio modalities to produce the interme-diate hyper-modality token, which contains less sentiment-irrelevant information. Finally, we apply a cross-modality fusion Transformer with language features serving as query and hyper-modality fea-tures serving as key and value. In this sense, the complementary relations between language and vi-sual and audio modalities are implicitly reasoned, achieving robust and accurate sentiment predic-tions. In summary, the major contributions of our work can be summarized as:"
+      },
+      {
+        "score": 0.8290839195251465,
+        "metadata": {
+          "is_displayed_chunk_content": true,
+          "_rc_v_score": 0.45372188091278076,
+          "nid": "f08074cc5525adf24e85aea93d6e00be|62be5e193d2b20b9d43b88c2915218ba|395e364081c1c288d91fee2ed8e04f1e|784ee77e07c881f42844e1c3ca9f5bd8",
+          "_q_score": 1,
+          "source": 0,
+          "_score": 0.8290839195251465,
+          "title": "1Introduction|2Related Work",
+          "content": "· We present a novel multimodal sentiment analysis method, namely Adaptive Language-guided Multimodal Transformer (ALMT), which for the first time explicitly tackles the adverse effects of redundant and conflicting information in auxiliary modalities (i.e., vi-sual and audio modalities), achieving a more robust sentiment understanding performance.· We devise a novel Adaptive Hyper-modality Learning (AHL) module for representation learning. The AHL uses different scales of language features to guide the visual and au-dio modalities to form a hyper modality that complements the language modality.·ALMT achieves state-of-the-art performance in several public and widely adopted datasets. We further provide in-depth analysis with rich empirical results to demonstrate the validity and necessity of the proposed approach.\n2Related Work\nIn this part, we briefly review previous work from two perspectives: multimodal sentiment anal-ysis and Transformers.",
+          "workspace_id": "workspace-demo",
+          "_rc_t_score": 6.697635173797607,
+          "_text_template": null,
+          "doc_name": "（4）ALMT",
+          "pipeline_id": "index-demo",
+          "image_url": [],
+          "exist_page_snapshot": true,
+          "doc_id": "file-demo",
+          "_chunk_status": 0,
+          "_rc_score": 0,
+          "hier_title": "Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\n>Abstract\n>1Introduction|2Related Work",
+          "_chunk_status_message": "成功",
+          "page_number": [
+            1
+          ],
+          "_id": "workspace-demo_index-demo_file-demo_0_3"
+        },
+        "text": "· We present a novel multimodal sentiment analysis method, namely Adaptive Language-guided Multimodal Transformer (ALMT), which for the first time explicitly tackles the adverse effects of redundant and conflicting information in auxiliary modalities (i.e., vi-sual and audio modalities), achieving a more robust sentiment understanding performance.· We devise a novel Adaptive Hyper-modality Learning (AHL) module for representation learning. The AHL uses different scales of language features to guide the visual and au-dio modalities to form a hyper modality that complements the language modality.·ALMT achieves state-of-the-art performance in several public and widely adopted datasets. We further provide in-depth analysis with rich empirical results to demonstrate the validity and necessity of the proposed approach.\n2Related Work\nIn this part, we briefly review previous work from two perspectives: multimodal sentiment anal-ysis and Transformers."
+      },
+      {
+        "score": 0.7441648840904236,
+        "metadata": {
+          "is_displayed_chunk_content": true,
+          "_rc_v_score": 0.431124210357666,
+          "nid": "d2b0fd4f7f9ebd88f447eb10d42ec987|79a391beabf231a5fd57292386e0bda1|894da431dd67d18ce614ad1070df642d",
+          "_q_score": 0.6556655191717419,
+          "source": 0,
+          "_score": 0.7441648840904236,
+          "title": "3Method|3.2Multimodal Input",
+          "content": "3.1OverviewThe overall processing pipeline of the proposed Adaptive Language-guided Multimodal Trans-former (ALMT) for robust multimodal sentiment analysis is in Figure 2. As shown, ALMT first extracts unified modality features from the input. Then, Adaptive Hyper-Modality Learning (AHL) module is employed to learn the adaptive hyper-modality representation with the guidance of lan-guage features at different scales. Finally, we apply a Cross-modality Fusion Transformer to synthesize the hyper-modality features with language features as anchors, thus obtaining a language-guided hyper-modality network for MSA.\n3.2Multimodal Input\nRegarding the multimodal input, each sample consists of language (l), audio (a), and visual (v) sources. Referring to previous works, we first ob-tain pre-computed sequences calculated by BERT(Kenton and Toutanova, 2019), Librosa (McFee et al., 2015), and OpenFace (Baltrusaitis et al.,2018), respectively. Then, we denote these se-quence inputs as Um e RImXdm,where m e{l,v,a},Tm is the sequence length and dm is the vector dimension of each modality. In practice, Tm and dm are different on different datasets. For ex-ample, on the MOSI dataset,T, Ta, T, da,d and d are 50,50,50, 5, 20, and 768, respectively.",
+          "workspace_id": "workspace-demo",
+          "_rc_t_score": 4.391408443450928,
+          "_text_template": null,
+          "doc_name": "（4）ALMT",
+          "pipeline_id": "index-demo",
+          "image_url": [],
+          "exist_page_snapshot": true,
+          "doc_id": "file-demo",
+          "_chunk_status": 0,
+          "_rc_score": 0,
+          "hier_title": "Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\n>2Related Work\n>3Method\n>3.1Overview|3.2Multimodal Input",
+          "_chunk_status_message": "成功",
+          "page_number": [
+            2
+          ],
+          "_id": "workspace-demo_index-demo_file-demo_0_6"
+        },
+        "text": "3.1OverviewThe overall processing pipeline of the proposed Adaptive Language-guided Multimodal Trans-former (ALMT) for robust multimodal sentiment analysis is in Figure 2. As shown, ALMT first extracts unified modality features from the input. Then, Adaptive Hyper-Modality Learning (AHL) module is employed to learn the adaptive hyper-modality representation with the guidance of lan-guage features at different scales. Finally, we apply a Cross-modality Fusion Transformer to synthesize the hyper-modality features with language features as anchors, thus obtaining a language-guided hyper-modality network for MSA.\n3.2Multimodal Input\nRegarding the multimodal input, each sample consists of language (l), audio (a), and visual (v) sources. Referring to previous works, we first ob-tain pre-computed sequences calculated by BERT(Kenton and Toutanova, 2019), Librosa (McFee et al., 2015), and OpenFace (Baltrusaitis et al.,2018), respectively. Then, we denote these se-quence inputs as Um e RImXdm,where m e{l,v,a},Tm is the sequence length and dm is the vector dimension of each modality. In practice, Tm and dm are different on different datasets. For ex-ample, on the MOSI dataset,T, Ta, T, da,d and d are 50,50,50, 5, 20, and 768, respectively."
+      },
+      {
+        "score": 0.7304475903511047,
+        "metadata": {
+          "is_displayed_chunk_content": true,
+          "_rc_v_score": 0.4653608521604038,
+          "nid": "59cd292cc7911e00a5c6bac00bcfbd5f|bd607210d8d248069d652d13bd010b7e|4aa60b9f39d7b440661b7183724de617|4c1b455228c46813792e96ea07691f88|3c152c4776e803ba6502663deda34dfc|9f7e2aca00416db0f0267ca88d6a9389|a5f3308df4a32d13cab7255450e2ce9a|c38f0c65560add45a125275203c93660|06b54f9d43bf6269e6dda127e77d1283|1e86053677dd2aeccd0e2cb7fd9d02e6|b8e6ec170cad74255ba8bede25683886|64a913a34de3baa38d11ca9882ec8437|c235fe74b24fad5f3c36e56f647ff2b4",
+          "_q_score": 0.6172673578215627,
+          "source": 0,
+          "_score": 0.7304475903511047,
+          "title": "Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen|Abstract",
+          "content": "756Proceedings ofthe 2023 Conference on Empirical Methods in Natural Language Processing, pages 756-767December 6-10,2023 ◎2023 Association for Computational LinguisticsModel Positive\nLearning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\nNegativeModel Positive2China University of Geosciences, Wuhan ✔sNanyang Technological UniversityModel Positive4 Shenzhen Institute of Artificial Intelligence and Robotics for Society1.4{zhanghaoyu, yutianshu}@cuhk.edu.cn{[zhanghaoyu, vvy190701,ygh2, liukejun, liuyy]@cug.edu.cn'scse-yyliu@ntu.edu.sg\nAbstract\nModelThoughh Multimodal SentimentAnalysis(MSA) proves effective by utilizing rich information from multiplee sources S(e.g.,×language, video, and audio), the potential sentiment-irrelevant and conflicting infor-mation across modalities may hinder the performance from being further improved. To alleviate this, V we present Adaptive Language-guided Multimodal Transformer(ALMT), which incorporates an Adaptive Hyper-modality Learning (AHL) module to learn an irrelevance/conflict-suppressing representation from visual and audio features under the guidance of language features at different scales. S. With the obtained hyper-modality representation, the model can obtain a complementary and joint representation through multimodal fusion for effective MSA. In practice, ALMT achieves state-of-the-art performance on several popular datasets(e.g., MOSI, MOSEI and CH-SIMS) and an abundance of ablation demonstrates the valid-ity and necessity of our irrelevance/conflict suppression mechanism.",
+          "workspace_id": "workspace-demo",
+          "_rc_t_score": 4.1342315673828125,
+          "_text_template": null,
+          "doc_name": "（4）ALMT",
+          "pipeline_id": "index-demo",
+          "image_url": [],
+          "exist_page_snapshot": true,
+          "doc_id": "file-demo",
+          "_chunk_status": 0,
+          "_rc_score": 0,
+          "hier_title": "Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen>|Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\n>Abstract>",
+          "_chunk_status_message": "成功",
+          "page_number": [
+            0
+          ],
+          "_id": "workspace-demo_index-demo_file-demo_0_0"
+        },
+        "text": "756Proceedings ofthe 2023 Conference on Empirical Methods in Natural Language Processing, pages 756-767December 6-10,2023 ◎2023 Association for Computational LinguisticsModel Positive\nLearning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\nNegativeModel Positive2China University of Geosciences, Wuhan ✔sNanyang Technological UniversityModel Positive4 Shenzhen Institute of Artificial Intelligence and Robotics for Society1.4{zhanghaoyu, yutianshu}@cuhk.edu.cn{[zhanghaoyu, vvy190701,ygh2, liukejun, liuyy]@cug.edu.cn'scse-yyliu@ntu.edu.sg\nAbstract\nModelThoughh Multimodal SentimentAnalysis(MSA) proves effective by utilizing rich information from multiplee sources S(e.g.,×language, video, and audio), the potential sentiment-irrelevant and conflicting infor-mation across modalities may hinder the performance from being further improved. To alleviate this, V we present Adaptive Language-guided Multimodal Transformer(ALMT), which incorporates an Adaptive Hyper-modality Learning (AHL) module to learn an irrelevance/conflict-suppressing representation from visual and audio features under the guidance of language features at different scales. S. With the obtained hyper-modality representation, the model can obtain a complementary and joint representation through multimodal fusion for effective MSA. In practice, ALMT achieves state-of-the-art performance on several popular datasets(e.g., MOSI, MOSEI and CH-SIMS) and an abundance of ablation demonstrates the valid-ity and necessity of our irrelevance/conflict suppression mechanism."
+      },
+      {
+        "score": 0.6765041947364807,
+        "metadata": {
+          "is_displayed_chunk_content": true,
+          "_rc_v_score": 0.45248207449913025,
+          "nid": "d5ab974bb73a7c084c21c6231d921926|2e3772cb4346799acf9224d31abee6b2|d8ed7785c4f49386012f309260177b49|0fd71b394f1b9d5262ec5fac7b4aae4c|7281fec3f3d7f040a4528e0fa50b3d7d",
+          "_q_score": 0.9261507882801024,
+          "source": 0,
+          "_score": 0.6765041947364807,
+          "title": "4.5Ablation Study and Analysis",
+          "content": "4.5.1 Effects of Different ModalitiesTo better understand the influence of each modal-ity in the proposed ALMT, Table 3 reports the ab-lation results of the subtraction of each modality to the ALMT on the MOSI and CH-SIMS datasets, respectively. It is shown that, if the AHL is re-moved based on the subtraction of each modality, the performance decreases significantly in all met-rics. This phenomenon demonstrates that AHL is beneficial in reducing the sentiment-irrelevant redundancy of visual and audio modalities, thus improving the robustness of MSA.In addition, we note that after removing the video and audio inputs, the performance of ALMT remains relatively high. Therefore, in the MSA task, we argue that eliminating the sentiment-irrelevant information that appears in auxiliary modalities (i.e., visual and audio modalities) and improving the contribution of auxiliary modalities in performance should be paid more attention to.Table 3: Effects of different modalities. Note: the best result is highlighted in bold.| Method|MOSI|MOSI|CH-SIMS|CH-SIMS|\n| Method|Acc-7|MAE|Acc-5|MAE|\n| ALMT|49.42|0.683|45.73|0.404|\n| w/o Audio|48.69|0.705|45.08|0.416|\n| w/o Video|47.96|0.704|44.64|0.403|\n| w/o Audio & AHL|46.91|0.724|43.54|0.407|\n| w/o Video & AHL|47.08|0.726|43.76|0.406|\n| w/o Video & Audio|46.79|0.752|40.26|0.405|",
+          "workspace_id": "workspace-demo",
+          "_rc_t_score": 6.203020095825195,
+          "_text_template": null,
+          "doc_name": "（4）ALMT",
+          "pipeline_id": "index-demo",
+          "image_url": [],
+          "exist_page_snapshot": true,
+          "doc_id": "file-demo",
+          "_chunk_status": 0,
+          "_rc_score": 0,
+          "hier_title": "Learning Language-guided Adaptive Hyper-modality Representation for Multimodal Sentiment Analysis✔Model×Haoyu Zhang1,2,Yu Wang2,Guanghao Yin2,Kejun Liu2,Yuanyuan Liu2,3,Tianshu Yu1,4*1The Chinese University of Hong Kong, Shenzhen\n>2Related Work\n>4Experiments\n>4.5Ablation Study and Analysis\n>4.5.1  Effects of Different Modalities>",
+          "_chunk_status_message": "成功",
+          "page_number": [
+            6
+          ],
+          "_id": "workspace-demo_index-demo_file-demo_0_14"
+        },
+        "text": "4.5.1 Effects of Different ModalitiesTo better understand the influence of each modal-ity in the proposed ALMT, Table 3 reports the ab-lation results of the subtraction of each modality to the ALMT on the MOSI and CH-SIMS datasets, respectively. It is shown that, if the AHL is re-moved based on the subtraction of each modality, the performance decreases significantly in all met-rics. This phenomenon demonstrates that AHL is beneficial in reducing the sentiment-irrelevant redundancy of visual and audio modalities, thus improving the robustness of MSA.In addition, we note that after removing the video and audio inputs, the performance of ALMT remains relatively high. Therefore, in the MSA task, we argue that eliminating the sentiment-irrelevant information that appears in auxiliary modalities (i.e., visual and audio modalities) and improving the contribution of auxiliary modalities in performance should be paid more attention to.Table 3: Effects of different modalities. Note: the best result is highlighted in bold.| Method|MOSI|MOSI|CH-SIMS|CH-SIMS|\n| Method|Acc-7|MAE|Acc-5|MAE|\n| ALMT|49.42|0.683|45.73|0.404|\n| w/o Audio|48.69|0.705|45.08|0.416|\n| w/o Video|47.96|0.704|44.64|0.403|\n| w/o Audio & AHL|46.91|0.724|43.54|0.407|\n| w/o Video & AHL|47.08|0.726|43.76|0.406|\n| w/o Video & Audio|46.79|0.752|40.26|0.405|"
+      }
+    ],
+    "isDowngrade": false
+  },
+  "success": true,
+  "message": "success",
+  "request_id": "9a09bde4-4841-93ad-a693-0cc3f965f917",
+  "status": "SUCCESS"
+}
